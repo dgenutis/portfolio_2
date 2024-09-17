@@ -1,0 +1,31 @@
+header {
+  background-color: black;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  gap: 50px;
+}
+nav a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.085em;
+}
+nav a:hover{
+    color: #00b7ff;
+}
