@@ -1,9 +1,10 @@
+/* src/Container4.css */
 .container4 {
-    background-color: #111111;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container4 h3 {
@@ -21,4 +22,92 @@
   border: none;
   margin-bottom: 100px;
   margin-top: 10px;
+}
+
+.container4-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  background-color: #111111;
+  padding-bottom: 50px;
+}
+
+/* src/components/VideoCard.css */
+.video-card {
+  width: 388px;
+  height: 252px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-card .video-front,
+.video-card .video-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.video-card .video-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-card .video-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.video-card .video-back h2 {
+  color: #00b7ff;
+}
+
+.video-card .video-back p {
+  color: #fff;
+}
+
+.video-card .video-back a {
+  color: #fff;
+  margin: 5px;
+  text-decoration: none;
+  border: 1px solid #00b7ff;
+  background-color: #00b7ff;
+  padding: 10px 30px;
+}
+
+.video-card .video-back a:hover{
+  background-color: #fff;
+  border: none;
+  color: #00b7ff;
+}
+
+.video-card .video-back .links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.video-card.flipped .video-front {
+  transform: rotateY(180deg);
+}
+
+.video-card.flipped .video-back {
+  transform: rotateY(0deg);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
