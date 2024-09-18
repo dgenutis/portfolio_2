@@ -28,7 +28,11 @@ const VideoCard = ({ videoSrc, title, description, links }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <video ref={videoRef} src={videoSrc} muted loop />
+        <video ref={videoRef} muted loop>
+          <source src={videoSrc.replace(".mp4", ".webm")} type="video/webm" />
+          <source src={videoSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="video-back">
         <h2>{title}</h2>

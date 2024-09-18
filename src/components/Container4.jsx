@@ -6,7 +6,7 @@ import VideoCard from "./VideoCard";
 const Container4 = () => {
   const videos = [
     {
-      src: "/moviesApp.mp4",
+      src: "/moviesApp.webm",
       title: "Movies App",
       description: "Movies App that uses a movies API",
       links: [
@@ -18,7 +18,7 @@ const Container4 = () => {
       ],
     },
     {
-      src: "/nenix.mp4",
+      src: "/nenix.webm",
       title: "Nenix",
       description: "Nenix example from Figma",
       links: [
@@ -30,7 +30,7 @@ const Container4 = () => {
       ],
     },
     {
-      src: "/weather.mp4",
+      src: "/weather.webm",
       title: "Weather App",
       description: "Weather App that uses a Weather API",
       links: [
@@ -45,7 +45,7 @@ const Container4 = () => {
       ],
     },
     {
-      src: "/lentpjuve.mp4",
+      src: "/lentpjuve.webm",
       title: "Lentpjuve",
       description: "Lentpjuve: How the calculator works",
       links: [
@@ -60,7 +60,7 @@ const Container4 = () => {
       ],
     },
     {
-      src: "/skaiciuotuvas.mp4",
+      src: "/skaiciuotuvas.webm",
       title: "Skaičiuotuvas",
       description: "Simple Calculator",
       links: [
@@ -75,7 +75,7 @@ const Container4 = () => {
       ],
     },
     {
-      src: "/portfolio1.mp4",
+      src: "/portfolio1.webm",
       title: "Portfolio",
       description: "This is Portfolio tamplate",
       links: [
