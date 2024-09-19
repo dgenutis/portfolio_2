@@ -38,7 +38,12 @@ const VideoCard = ({ videoSrc, title, description, links }) => {
         <p>{description}</p>
         <div className="links">
           {links.map((link, index) => (
-            <a key={index} href={link.href}>
+            <a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {link.text}
             </a>
           ))}

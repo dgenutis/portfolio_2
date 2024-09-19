@@ -28,7 +28,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  opacity: 0; /* Initially hidden */
+  opacity: 0; /* Initially hidden */border: 6px solid #ffffff;
 }
 
 .flyIn {

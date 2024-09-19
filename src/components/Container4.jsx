@@ -1,6 +1,5 @@
 // src/Container4.jsx
 import "./Container4.css";
-import React from "react";
 import VideoCard from "./VideoCard";
 
 const Container4 = () => {
@@ -94,7 +93,7 @@ const Container4 = () => {
   return (
     <>
       <div className="container4">
-        <h3>Porojects</h3>
+        <h3>Projects</h3>
         <hr />
       </div>
       <div className="container4-1">
@@ -107,6 +106,11 @@ const Container4 = () => {
             links={video.links}
           />
         ))}
+      </div>
+      <div className="container4-2">
+        <a href="#">
+          view all <i class="fa fa-th" aria-hidden="true"></i>
+        </a>
       </div>
     </>
   );

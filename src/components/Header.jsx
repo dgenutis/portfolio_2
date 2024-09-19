@@ -12,7 +12,9 @@ const Header = () => {
           <Link to="about" smooth={true} duration={500}>
             About Me
           </Link>
-          <a href="#">Projects</a>
+          <Link to="container4" smooth={true} duration={500}>
+          Projects
+          </Link>
           <a href="#">Say Hello</a>
         </nav>
       </header>
