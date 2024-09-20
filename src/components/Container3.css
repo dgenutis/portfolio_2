@@ -1,7 +1,13 @@
-.skills-container {
+.skills-container{
+  display: flex;
+  justify-content: center;
+  background-color: #191919;
+}
+
+.skills-container-1 {
   background-color: #191919;
   height: 290px;
-  width: 100%;
+  width: 1230px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -50,6 +56,7 @@
   font-size: 1.3em;
   margin: 0 10px;
   perspective: 100px; /* Add perspective */
+    cursor: pointer;
 }
 
 .icon-inner {

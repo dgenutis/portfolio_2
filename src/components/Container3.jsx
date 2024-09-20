@@ -32,13 +32,15 @@ const Container3 = () => {
 
   return (
     <div className="skills-container">
+
+    <div className="skills-container-1">
       <Swiper
         modules={[Autoplay]}
         navigation
         autoplay={{ delay: 3000, disableOnInteraction: false }} 
         loop={true}
         spaceBetween={50}
-        slidesPerView={7}
+        slidesPerView={5}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
@@ -58,6 +60,7 @@ const Container3 = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
     </div>
   );
 };
