@@ -24,13 +24,22 @@
   border: none;
   margin-top: 10px;
 }
-
 .container4-1 {
+background-color: #111111;
+display: flex;
+justify-content: center;
+
+}
+
+.container4-1-1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
+  margin: 0;
   background-color: #111111;
+  width: 1224px;
 }
 
 .video-card {
