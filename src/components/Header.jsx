@@ -24,7 +24,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <>
+    <header-1>
       <header className={hidden ? "hidden" : ""}>
         <a href="#" className="logo">
           Dainius Genutis
@@ -39,7 +39,7 @@ const Header = () => {
           <a href="#">Say Hello</a>
         </nav>
       </header>
-    </>
+    </header-1>
   );
 };
 

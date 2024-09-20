@@ -7,8 +7,7 @@
 .skills-container-1 {
   background-color: #191919;
   height: 290px;
-  width: 1230px;
-  padding: 20px;
+  max-width: 1230px;
   display: flex;
   align-items: center;
   justify-content: center; 

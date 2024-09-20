@@ -1,13 +1,16 @@
-
+header-1{
+  display: flex;
+  justify-content: center;
+}
 header {
   background-color: black;
   height: 90px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 1230px;
   top: 0;
   transition: top 0.3s;
   z-index: 1000;

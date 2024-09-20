@@ -39,7 +39,7 @@ justify-content: center;
   align-items: center;
   margin: 0;
   background-color: #111111;
-  width: 1224px;
+  max-width: 1230px;
 }
 
 .video-card {

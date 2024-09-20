@@ -27,7 +27,8 @@ const Container1 = () => {
   }, []);
 
   return (
-    <div className="container" ref={containerRef}>
+    <div className="container">
+    <div className="container-1" ref={containerRef}>
       <div className="title">
         <h2>Junior JavaScript</h2>
         <h1>Full-Stack Developer</h1>
@@ -35,6 +36,8 @@ const Container1 = () => {
       <div className="photo-container">
         <img src="/2.jpg" alt="Developer" className="photo" />
       </div>
+    </div>
+
     </div>
   );
 };
