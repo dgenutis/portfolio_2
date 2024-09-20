@@ -26,9 +26,9 @@ const Header = () => {
   return (
     <header-1>
       <header className={hidden ? "hidden" : ""}>
-        <a href="#" className="logo">
+        <Link to="container" smooth={true} duration={500} className="logo">
           Dainius Genutis
-        </a>
+        </Link>
         <nav>
           <Link to="about" smooth={true} duration={500}>
             About Me
@@ -36,7 +36,10 @@ const Header = () => {
           <Link to="container4" smooth={true} duration={500}>
             Projects
           </Link>
-          <a href="#">Say Hello</a>
+          <Link to="container5" smooth={true} duration={500}>
+            Say Hello
+          </Link>
+
         </nav>
       </header>
     </header-1>

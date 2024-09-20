@@ -1,4 +1,5 @@
 // src/Container4.jsx
+import React, { useEffect, useRef } from "react";
 import "./Container4.css";
 import VideoCard from "./VideoCard";
 
@@ -90,6 +91,31 @@ const Container4 = () => {
     },
   ];
 
+  const linkRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (linkRef.current) {
+      observer.observe(linkRef.current);
+    }
+
+    return () => {
+      if (linkRef.current) {
+        observer.unobserve(linkRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <div className="container4">
@@ -97,22 +123,21 @@ const Container4 = () => {
         <hr />
       </div>
       <div className="container4-1">
-      <div className="container4-1-1">
-        {videos.map((video, index) => (
-          <VideoCard
-            key={index}
-            videoSrc={video.src}
-            title={video.title}
-            description={video.description}
-            links={video.links}
-          />
-        ))}
-      </div>
-
+        <div className="container4-1-1">
+          {videos.map((video, index) => (
+            <VideoCard
+              key={index}
+              videoSrc={video.src}
+              title={video.title}
+              description={video.description}
+              links={video.links}
+            />
+          ))}
+        </div>
       </div>
       <div className="container4-2">
-        <a href="#">
-          view all <i class="fa fa-th" aria-hidden="true"></i>
+        <a href="#" ref={linkRef}>
+          view all <i className="fa fa-th" aria-hidden="true"></i>
         </a>
       </div>
     </>
