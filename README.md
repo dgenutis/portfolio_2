@@ -1,6 +1,6 @@
 # React + Vite
 
-neuzbaigtas https://dainiusgenutis.netlify.app/
+neuzbaigtas https://www.dgenutis.com
 
 
 backend formos pildymo serverine dalis yra email-server dalyje
