@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import "./Container5.css";
 
 const Container5 = () => {
   const containerRef = useRef(null);
   const [isEmailSent, setIsEmailSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,26 +32,37 @@ const Container5 = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setIsEmailSent(true); // Show modal immediately
+    setErrorMessage(""); // Clear previous error messages
 
-    emailjs
-      .sendForm(
-        "service_9gfzm29",
-        "template_64jawz8",
-        e.target,
-        "bj1nmpK3QwrEcmPNZ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setTimeout(() => {
-            setIsEmailSent(false);
-          }, 3000); // Close modal after 3 seconds
-        },
-        (error) => {
-          console.log(error.text);
-          setIsEmailSent(false); // Hide modal if there's an error
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
-      );
+        return response.json();
+      })
+      .then((result) => {
+        console.log(result);
+        setIsEmailSent(false); // Close modal immediately
+        window.scrollTo(0, 0); // Scroll to the top
+        window.location.reload(); // Reload the page
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setErrorMessage("Nepavyko išsiųsti el. laiško. Bandykite dar kartą.");
+        setIsEmailSent(false); // Hide modal if there's an error
+        window.scrollTo(0, 0); // Scroll to the top
+        window.location.reload(); // Reload the page even if there's an error
+      });
 
     e.target.reset();
   };
@@ -77,7 +88,9 @@ const Container5 = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message"></textarea>
             </div>
-            <button type="submit" className="submit-button">Send</button>
+            <button type="submit" className="submit-button">
+              Send
+            </button>
           </form>
         </div>
         {isEmailSent && (
@@ -91,6 +104,7 @@ const Container5 = () => {
             </div>
           </div>
         )}
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
       </div>
     </div>
   );
