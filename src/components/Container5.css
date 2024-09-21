@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .container5-1,
 .container5-2 {
   opacity: 0;
-  transform: translateY(50px); /* Adjusted to 50px to avoid large white space */
+  transform: translateY(50px); 
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 

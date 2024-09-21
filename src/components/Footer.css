@@ -1,0 +1,9 @@
+.footer p {
+    text-align: center;
+    background-color: #030303;
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
