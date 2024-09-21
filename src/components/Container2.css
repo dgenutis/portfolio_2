@@ -1,7 +1,8 @@
 .about {
   height: 417px;
-  width: 100%;
   background-color: #111111;
+  display: flex;
+  justify-content: center;
 }
 
 .about-me {
@@ -9,9 +10,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  max-width: 1230px;
+  width: 1230px;
   height: 400px;
-  margin-left: 300px;
+
 }
 
 .about-me hr,

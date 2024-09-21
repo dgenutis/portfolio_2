@@ -118,10 +118,13 @@ const Container4 = () => {
 
   return (
     <>
+    <div className="container4-0">
       <div className="container4">
         <h3>Projects</h3>
         <hr />
       </div>
+
+    </div>
       <div className="container4-1">
         <div className="container4-1-1">
           {videos.map((video, index) => (
@@ -135,6 +138,8 @@ const Container4 = () => {
           ))}
         </div>
       </div>
+      <div className="container4-2-0">
+       
       <div className="container4-2">
         <a href="#" ref={linkRef}>
           view all{" "}
@@ -151,6 +156,8 @@ const Container4 = () => {
           </svg>
         </a>
       </div>
+       
+        </div>
     </>
   );
 };

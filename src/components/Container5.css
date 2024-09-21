@@ -1,9 +1,16 @@
+.container5-0 {
+  background-color: #090909;
+  display: flex;
+  justify-content: center;
+}
+
 .container5 {
   background-color: #090909;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
+  width: 1230px;
 }
 
 .container5-1,
@@ -58,6 +65,7 @@ form {
 .form-group {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form-group label {
@@ -92,4 +100,42 @@ button:hover {
   color: #00b7ff;
   background-color: #fff;
   border: 1px solid #00b7ff;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

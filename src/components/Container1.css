@@ -6,13 +6,13 @@
 
 .container-1 {
   width: 1230px;
-  height: calc(100vh - 90px);
+  height:100vh;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 200px;
-  margin: 0 auto;
+
 }
 
 .title h2 {
@@ -21,7 +21,7 @@
   letter-spacing: -0.035em;
   font-weight: 700;
   line-height: 1.1;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
 }
 
 .title h1 {
