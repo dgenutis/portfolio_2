@@ -1,9 +1,9 @@
-
-.container{
+.container {
   background-color: black;
   display: flex;
   justify-content: center;
 }
+
 .container-1 {
   width: 1230px;
   height: calc(100vh - 90px);
@@ -42,6 +42,25 @@
 
 .flyIn {
   animation: flyIn 1.5s ease-out forwards;
+}
+
+.container svg {
+  color: #00b7ff;
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  border: 1px solid #00b7ff;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20%;
+  opacity: 0.1;
+}
+
+.container svg:hover {
+  color: rgb(255, 255, 255);
+  background-color: #00b7ff;
+  opacity: 1;
 }
 
 @keyframes flyIn {
