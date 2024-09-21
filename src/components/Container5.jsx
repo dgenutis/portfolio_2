@@ -31,6 +31,7 @@ const Container5 = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsEmailSent(true); // Show modal immediately
 
     emailjs
       .sendForm(
@@ -42,18 +43,17 @@ const Container5 = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setIsEmailSent(true);
+          setTimeout(() => {
+            setIsEmailSent(false);
+          }, 3000); // Close modal after 3 seconds
         },
         (error) => {
           console.log(error.text);
+          setIsEmailSent(false); // Hide modal if there's an error
         }
       );
 
     e.target.reset();
-  };
-
-  const closeModal = () => {
-    setIsEmailSent(false);
   };
 
   return (
@@ -77,16 +77,17 @@ const Container5 = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message"></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="submit-button">Send</button>
           </form>
         </div>
         {isEmailSent && (
           <div className="modal">
             <div className="modal-content">
-              <span className="close" onClick={closeModal}>
-                &times;
-              </span>
-              <p>Thank you for your message! We will get back to you soon.</p>
+              <div className="modal-header">
+                <div className="checkmark">&#10003;</div>
+                <p>Thank you for your message! We will get back to you soon.</p>
+              </div>
+              <div className="progress-bar"></div>
             </div>
           </div>
         )}
