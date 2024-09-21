@@ -35,8 +35,8 @@ const Container5 = () => {
 
     emailjs
       .sendForm(
-        "service_omvbmqk",
-        "template_e2ku65p",
+        "service_9gfzm29",
+        "template_64jawz8",
         e.target,
         "bj1nmpK3QwrEcmPNZ"
       )
