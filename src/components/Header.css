@@ -1,7 +1,18 @@
-header-1{
+.header-background {
   display: flex;
   justify-content: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
+
+.header-background.hidden {
+  transform: translateY(-100%); /* Hide the entire background by moving it up */
+}
+
 header {
   background-color: black;
   height: 90px;
@@ -9,16 +20,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   width: 1230px;
-  top: 0;
-  transition: top 0.3s;
-  z-index: 1000;
   cursor: pointer;
-}
-
-header.hidden {
-  top: -90px; /* Adjust this value based on your header height */
 }
 
 header a {

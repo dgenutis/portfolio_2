@@ -24,8 +24,8 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <header-1>
-      <header className={hidden ? "hidden" : ""}>
+    <div className={`header-background ${hidden ? "hidden" : ""}`}>
+      <header>
         <Link to="container" smooth={true} duration={500} className="logo">
           Dainius Genutis
         </Link>
@@ -39,10 +39,9 @@ const Header = () => {
           <Link to="container5" smooth={true} duration={500}>
             Say Hello
           </Link>
-
         </nav>
       </header>
-    </header-1>
+    </div>
   );
 };
 
