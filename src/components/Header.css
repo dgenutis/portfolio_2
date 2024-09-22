@@ -1,3 +1,5 @@
+
+
 .header-background {
   display: flex;
   justify-content: center;
@@ -10,7 +12,7 @@
 }
 
 .header-background.hidden {
-  transform: translateY(-100%); /* Hide the entire background by moving it up */
+  transform: translateY(-100%); 
 }
 
 header {

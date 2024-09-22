@@ -154,6 +154,11 @@ button:active {
   position: absolute;
   bottom: 0;
   left: 0;
+  animation: progress 10s linear forwards;
+}
+
+.progress-bar.timeout {
+  background-color: red;
   animation: progress 5s linear forwards;
 }
 
@@ -164,4 +169,43 @@ button:active {
   to {
     width: 0;
   }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.timeout-message-container {
+  margin-top: 10px;
+}
+
+.timeout-message {
+  color: red;
+}
+
+.contact-message {
+  margin-top: 10px;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
 }
