@@ -37,7 +37,7 @@ const Container5 = () => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    fetch("http://localhost:10000/send-email", {
+    fetch("https://email-server-ern5.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
