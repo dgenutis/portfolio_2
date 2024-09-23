@@ -33,7 +33,7 @@
 }
 
 .container5-1 hr {
-  width: 200px;
+  width: 150px;
   height: 5px;
   background-color: #00b7ff;
   border: none;
@@ -208,4 +208,41 @@ button:active {
 .linkedin-icon {
   width: 20px;
   height: 20px;
+}
+
+
+@media (max-width: 1400px) {
+.container5-2 {
+ 
+  width: 100%;
+}
+
+}
+
+@media (max-width: 1350px) {
+.container5-2 {
+ 
+  width: 100%;
+}
+.container5.visible {
+  width: 80%;
+}
+
+.container5-1 {
+  width: 100%;
+}
+}
+
+
+@media (max-width: 800px) {
+.container5-1 h1 {
+  font-size: 32px;
+}
+
+.container5-1 hr {
+  width: 120px;
+  height: 3.5px;
+
+}
+
 }

@@ -32,35 +32,41 @@ const Container3 = () => {
 
   return (
     <div className="skills-container">
-
-    <div className="skills-container-1">
-      <Swiper
-        modules={[Autoplay]}
-        navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }} 
-        loop={true}
-        spaceBetween={50}
-        slidesPerView={5}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        {iconsData.map((icon, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className={`icon ${flipped[index] ? "flipped" : ""}`} 
-              onClick={() => handleFlip(index)}
-            >
-              <div className="icon-inner">
-                <div className="icon-front">
-                  <img src={icon.src} alt={icon.alt} />
+      <div className="skills-container-1">
+        <Swiper
+          modules={[Autoplay]}
+          navigation
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={50}
+          slidesPerView={5}
+          breakpoints={{
+            320: { slidesPerView: 4, spaceBetween: 10 },
+            480: { slidesPerView: 4, spaceBetween: 30 },
+            768: { slidesPerView: 5 },
+            1024: { slidesPerView: 5 },
+            1200: { slidesPerView: 5 },
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          {iconsData.map((icon, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className={`icon ${flipped[index] ? "flipped" : ""}`}
+                onClick={() => handleFlip(index)}
+              >
+                <div className="icon-inner">
+                  <div className="icon-front">
+                    <img src={icon.src} alt={icon.alt} />
+                  </div>
+                  <div className="icon-back">{icon.label}</div>
                 </div>
-                <div className="icon-back">{icon.label}</div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 /* src/Container4.css */
-.container4-0{
+.container4-0 {
   background-color: #111111;
   display: flex;
   justify-content: center;
@@ -12,7 +12,8 @@
   justify-content: center;
   align-items: center;
   height: 250px;
-  width: 1230px;
+  width: 100%;
+  max-width: 1230px;
 }
 
 .container4 h3 {
@@ -45,11 +46,13 @@
   align-items: center;
   margin: 0;
   background-color: #111111;
+  width: 100%;
   max-width: 1230px;
 }
 
 .video-card {
-  width: 388px;
+  width: 100%;
+  max-width: 388px;
   height: 252px;
   perspective: 1000px;
   cursor: pointer;
@@ -125,11 +128,13 @@ video {
   height: 100%;
   object-fit: cover;
 }
-.container4-2-0{
+
+.container4-2-0 {
   background-color: #111111;
   display: flex;
   justify-content: center;
 }
+
 .container4-2 {
   display: flex;
   flex-direction: column;
@@ -138,7 +143,8 @@ video {
   padding: 20px;
   background-color: #111111;
   padding-bottom: 100px;
-  width: 1230px;
+  width: 100%;
+  max-width: 1230px;
 }
 
 .container4-2 a {
@@ -181,4 +187,65 @@ video {
 
 .container4-2 a.visible {
   animation-play-state: running;
+}
+
+/* Media Queries for smaller screens */
+
+@media (max-width: 850px){
+
+  .video-card {
+    width: 100%; 
+    max-width: 350px;
+  }
+
+}
+
+
+@media (max-width: 810px) {
+  .container4 h3 {
+    font-size: 32px; 
+  }
+
+.container4 hr {
+  width: 100px;
+  height: 4px;
+
+}
+  .video-card {
+    width: 100%; 
+    max-width: 300px;
+  }
+
+  .container4-2 a {
+    font-size: 16px; 
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-card {
+    width: 100%; 
+    max-width: 450px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container4 h3 {
+    font-size: 28px; 
+  }
+
+  .container4 hr {
+    width: 80px; 
+  }
+
+  .video-card {
+    width: 100%;
+    max-width: 250px; 
+  }
+
+  .container4-2 a {
+    font-size: 14px; 
+    padding: 12px 15px;
+  }
 }

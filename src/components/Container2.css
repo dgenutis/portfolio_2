@@ -1,8 +1,9 @@
 .about {
-  height: 417px;
+  height: auto; 
   background-color: #111111;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .about-me {
@@ -10,9 +11,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 1230px;
-  height: 400px;
-
+  width: 100%;
+  max-width: 1230px;
+  height: auto; 
 }
 
 .about-me hr,
@@ -59,13 +60,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .resume {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  padding: 10px 40px;
+  padding: 10px 20px; /* Adjust padding for smaller screens */
   margin-top: 20px;
   font-size: 14px;
   color: #fff;
@@ -91,4 +93,42 @@
 
 .resume svg {
   margin-right: 5px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .about-me h1 {
+    font-size: 32px; 
+  }
+  .about-me hr {
+
+  height: 3.5px;
+
+}
+
+  .about-me p {
+    font-size: 14px; 
+    line-height: 20px; 
+  }
+
+  .resume {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me h1 {
+    font-size: 28px; 
+  }
+
+  .about-me p {
+    font-size: 12px; 
+    line-height: 18px;
+  }
+
+  .resume {
+    padding: 8px 16px; 
+    font-size: 10px; 
+  }
 }
