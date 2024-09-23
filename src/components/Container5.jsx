@@ -77,6 +77,7 @@ const Container5 = () => {
 
   const closeModal = () => {
     setIsEmailSent(false);
+    setIsTimeout(false);
   };
 
   return (
