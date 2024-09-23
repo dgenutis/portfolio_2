@@ -1,5 +1,7 @@
 .footer p {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #030303;
     color: #999999;
     font-family: "Roboto", sans-serif;
