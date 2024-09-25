@@ -1,5 +1,22 @@
-.footer p {
+.footer0 {
     display: flex;
+    justify-content: center;
+    background-color: #030303;
+}
+
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #030303;
+    border-top: 1px solid #99999961;
+}
+
+.footer p{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #030303;
@@ -10,3 +27,10 @@
     letter-spacing: 2px;
     height: 20px;
 }
+
+.footer a {
+    display: flex;
+    flex-direction: row;  
+}
+
+

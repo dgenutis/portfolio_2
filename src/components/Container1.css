@@ -46,7 +46,7 @@
 .container svg {
   color: #00b7ff;
   position: fixed;
-  top: 90%;
+  top: 85%;
   left: 95%;
   border: 1px solid #00b7ff;
   background-color: rgb(255, 255, 255);
@@ -98,8 +98,8 @@
   .container svg {
     top: 85%;
     left: 90%;
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
   }
 }
 
