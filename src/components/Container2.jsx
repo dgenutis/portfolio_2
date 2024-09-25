@@ -68,6 +68,7 @@ const Container2 = () => {
           <a
             href="/RESUME.pdf"
             className="resume"
+            target="_blank"
             ref={(el) => (resumeRefs.current[0] = el)}
           >
             <svg
@@ -92,6 +93,7 @@ const Container2 = () => {
           <a
             href="/CV.pdf"
             className="resume"
+            target="_blank"
             ref={(el) => (resumeRefs.current[1] = el)}
           >
             <svg

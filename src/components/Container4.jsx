@@ -77,7 +77,7 @@ const Container4 = () => {
     {
       src: "/portfolio1.webm",
       title: "Portfolio",
-      description: "This is Portfolio tamplate",
+      description: "This is Portfolio template",
       links: [
         {
           href: "https://dgenutis.github.io/Porfolio_1-sablonas-/#",
@@ -118,13 +118,12 @@ const Container4 = () => {
 
   return (
     <>
-    <div className="container4-0">
-      <div className="container4">
-        <h3>Projects</h3>
-        <hr />
+      <div className="container4-0">
+        <div className="container4">
+          <h3>Projects</h3>
+          <hr />
+        </div>
       </div>
-
-    </div>
       <div className="container4-1">
         <div className="container4-1-1">
           {videos.map((video, index) => (
@@ -139,25 +138,23 @@ const Container4 = () => {
         </div>
       </div>
       <div className="container4-2-0">
-       
-      <div className="container4-2">
-        <a href="#" ref={linkRef}>
-          view all{" "}
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 1024 1024"
-            height="1.5em"
-            width="1.5em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M523.8 191.4v288.9h382V128.1zm0 642.2l382 62.2v-352h-382zM120.1 480.2H443V201.9l-322.9 53.5zm0 290.4L443 823.2V543.8H120.1z"></path>
-          </svg>
-        </a>
-      </div>
-       
+        <div className="container4-2">
+          <a href="https://github.com/dgenutis" ref={linkRef} target="_blank">
+            view all{" "}
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M523.8 191.4v288.9h382V128.1zm0 642.2l382 62.2v-352h-382zM120.1 480.2H443V201.9l-322.9 53.5zm0 290.4L443 823.2V543.8H120.1z"></path>
+            </svg>
+          </a>
         </div>
+      </div>
     </>
   );
 };
