@@ -8,10 +8,9 @@ import videoData from "../data/videos.json";
 const Container4 = () => {
 
   const [videos, setVideos] = useState([]);
-  useEffect(() => {
-      setVideos(videoData);
-    }, []);
-
+useEffect(() => {
+  setVideos(videoData.slice(0, 6));
+}, []);
 
   const linkRef = useRef(null);
 
