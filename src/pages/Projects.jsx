@@ -7,6 +7,12 @@ import videoData from "../data/videos.json"
 const Projects = () => {
   const [videos, setVideos] = useState([]);
 
+// pvz kaip paimti 3 failus is .json
+// useEffect(() => {
+//   const limitedVideos = videoData.slice(0, 3);
+//   setVideos(limitedVideos);
+// }, []);
+
   useEffect(() => {
     setVideos(videoData);
   }, []);
