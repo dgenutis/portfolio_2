@@ -19,9 +19,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "emoji-picker-react": "^4.12.0",
     "lenis": "^1.1.13",
-    "particles-bg": "^2.5.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "react-scroll": "^1.9.0",
     "swiper": "^11.1.12"
   },

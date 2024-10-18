@@ -1,7 +1,8 @@
 // src/Container4.jsx
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Container4.css";
 import VideoCard from "./VideoCard";
+import { Link } from "react-router-dom";
 
 const Container4 = () => {
   const videos = [
@@ -139,7 +140,7 @@ const Container4 = () => {
       </div>
       <div className="container4-2-0">
         <div className="container4-2">
-          <a href="https://github.com/dgenutis" ref={linkRef} target="_blank">
+          <Link to="/projects" ref={linkRef}>
             view all{" "}
             <svg
               stroke="currentColor"
@@ -149,10 +150,10 @@ const Container4 = () => {
               height="1.5em"
               width="1.5em"
               xmlns="http://www.w3.org/2000/svg"
-            >
+              >
               <path d="M523.8 191.4v288.9h382V128.1zm0 642.2l382 62.2v-352h-382zM120.1 480.2H443V201.9l-322.9 53.5zm0 290.4L443 823.2V543.8H120.1z"></path>
             </svg>
-          </a>
+           </Link>
         </div>
       </div>
     </>

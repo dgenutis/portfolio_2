@@ -1,0 +1,38 @@
+.projects-container {
+    background-color: black;
+}
+
+.projects-1 {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.projects-1 h3 {
+  color: #00b7ff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.projects-1 hr {
+  width: 130px;
+  height: 5px;
+  background-color: #00b7ff;
+  border: none;
+  margin-top: 10px;
+}
+
+.projects-2 {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}

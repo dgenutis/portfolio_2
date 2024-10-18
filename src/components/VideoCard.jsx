@@ -1,5 +1,5 @@
 // src/components/VideoCard.jsx
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 
 const VideoCard = ({ videoSrc, title, description, links }) => {
