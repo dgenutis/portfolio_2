@@ -21,19 +21,14 @@ const Projects = () => {
     <>
       <div className="projects-container">
         <div className="projects-header-background">
-
-        <div className="projects-header">
-          <Link to="#" className="logo">
-            Dainius Genutis
-          </Link>
-          <div className="projects-nav">
-            <Link
-              to="/"
-            >
-            To Main
+          <div className="projects-header">
+            <Link to="#" className="logo">
+              Dainius Genutis
             </Link>
+            <div className="projects-nav">
+              <Link to="/">To Main</Link>
+            </div>
           </div>
-        </div>
         </div>
         <div className="projects-1">
           <h3>Projects</h3>
@@ -63,6 +58,26 @@ const Projects = () => {
             <img src="/Github_white.png" alt="GH" />
           </a>
         </div>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            version="1.1"
+            viewBox="0 0 16 16"
+            height="3em"
+            width="3em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M8 0.5l-7.5 7.5h4.5v8h6v-8h4.5z"></path>
+          </svg>
+        </a>
       </div>
     </>
   );

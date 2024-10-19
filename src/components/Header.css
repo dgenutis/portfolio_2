@@ -66,6 +66,10 @@ header a {
   text-transform: uppercase;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   gap: 50px;

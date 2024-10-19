@@ -1,9 +1,9 @@
 .projects-container {
-    background-color: black;
-    padding-bottom: 10px;
+  background-color: black;
+  padding-bottom: 10px;
 }
-.projects-header-background{
-    display: flex;
+.projects-header-background {
+  display: flex;
   justify-content: center;
   background-color: black;
   position: fixed;
@@ -12,7 +12,7 @@
   z-index: 1000;
   transition: transform 0.2s ease-in-out;
 }
-.projects-header{
+.projects-header {
   background-color: black;
   height: 90px;
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 .projects-header a {
-    color: #fff;
+  color: #fff;
   text-decoration: none;
   font-size: 42px;
   font-weight: 700;
@@ -51,17 +51,17 @@
   color: #00b7ff;
 }
 
-
 .projects-1 {
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 450px;
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
+  padding-top: 140px;
 }
 
 .projects-1 h3 {
@@ -81,25 +81,84 @@
 }
 
 .projects-2 {
-    background-color: #111111;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
 }
 
+.projects-container svg {
+  color: #00b7ff;
+  position: fixed;
+  top: 85%;
+  left: 95%;
+  border: 1px solid #00b7ff;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20%;
+  opacity: 0.1;
+}
 
+.projects-container svg:hover {
+  color: rgb(255, 255, 255);
+  background-color: #00b7ff;
+  opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  .projects-container svg {
+    top: 85%;
+    left: 90%;
+    height: 3em;
+    width: 3em;
+  }
+}
+
+@media (max-width: 1060px) {
+  .projects-container svg {
+    top: 85%;
+    left: 90%;
+    height: 3em;
+    width: 3em;
+  }
+}
 
 @media (max-width: 800px) {
   .projects-header .logo {
     font-size: 36px;
   }
+}
 
+@media (max-width: 700px) {
+  .projects-container svg {
+    top: 85%;
+    left: 88%;
+    height: 2.5em;
+    width: 2.5em;
+  }
 }
 
 @media (max-width: 600px) {
   .projects-header .logo {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container svg {
+    left: 85%;
+    height: 2.5em;
+    width: 2.5em;
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-container svg {
+    left: 80%;
+    height: 2em;
+    width: 2em;
   }
 }
