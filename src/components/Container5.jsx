@@ -159,6 +159,17 @@ const Container5 = () => {
           </div>
         )}
         {errorMessage && <div className="error-message">{errorMessage}</div>}
+        <div className="social-icons">
+          <a href="https://www.facebook.com/dgenutis/" target="_blank">
+            <img src="/Facebook_white.png" alt="FB" />
+          </a>{" "}
+          <a href="https://www.linkedin.com/in/dainiusgenutis/" target="_blank">
+            <img src="/LinkedIN_white.png" alt="LI" />
+          </a>
+          <a href="https://github.com/dgenutis" target="_blank">
+            <img src="/Github_white.png" alt="GH" />
+          </a>
+        </div>
       </div>
     </div>
   );

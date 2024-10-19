@@ -1,6 +1,56 @@
 .projects-container {
     background-color: black;
+    padding-bottom: 10px;
 }
+.projects-header-background{
+    display: flex;
+  justify-content: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.2s ease-in-out;
+}
+.projects-header{
+  background-color: black;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.projects-header a {
+    color: #fff;
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.projects-nav {
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.projects-nav a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.085em;
+}
+
+.projects-nav a:hover {
+  color: #00b7ff;
+}
+
 
 .projects-1 {
   background-color: black;
@@ -33,6 +83,23 @@
 .projects-2 {
     background-color: #111111;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 100px 0;
+}
+
+
+
+@media (max-width: 800px) {
+  .projects-header .logo {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .projects-header .logo {
+    font-size: 36px;
+  }
 }

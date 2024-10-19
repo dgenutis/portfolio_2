@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   width: 1230px;
 }
 
@@ -208,6 +208,30 @@ button:active {
 .linkedin-icon {
   width: 20px;
   height: 20px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 100px;
+}
+
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons img:active {
+  transform: scale(0.9) rotate(-5deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 

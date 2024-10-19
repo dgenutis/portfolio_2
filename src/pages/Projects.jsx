@@ -20,11 +20,21 @@ const Projects = () => {
   return (
     <>
       <div className="projects-container">
-        <header>
-          <Link to="/" className="logo">
+        <div className="projects-header-background">
+
+        <div className="projects-header">
+          <Link to="#" className="logo">
             Dainius Genutis
           </Link>
-        </header>
+          <div className="projects-nav">
+            <Link
+              to="/"
+            >
+            To Main
+            </Link>
+          </div>
+        </div>
+        </div>
         <div className="projects-1">
           <h3>Projects</h3>
           <hr />
@@ -41,6 +51,17 @@ const Projects = () => {
               />
             ))}
           </div>
+        </div>
+        <div className="social-icons">
+          <a href="https://www.facebook.com/dgenutis/" target="_blank">
+            <img src="/Facebook_white.png" alt="FB" />
+          </a>{" "}
+          <a href="https://www.linkedin.com/in/dainiusgenutis/" target="_blank">
+            <img src="/LinkedIN_white.png" alt="LI" />
+          </a>
+          <a href="https://github.com/dgenutis" target="_blank">
+            <img src="/Github_white.png" alt="GH" />
+          </a>
         </div>
       </div>
     </>
