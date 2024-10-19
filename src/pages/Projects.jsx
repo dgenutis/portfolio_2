@@ -2,19 +2,18 @@ import "./Projects.css";
 import { Link } from "react-router-dom";
 import VideoCard from "../components/VideoCard";
 import { useEffect, useState } from "react";
-import videoData from "../data/videos.json"
+import videoData from "../data/videos.json";
 
 const Projects = () => {
   const [videos, setVideos] = useState([]);
 
-// pvz kaip paimti 3 failus is .json
-// useEffect(() => {
-//   const limitedVideos = videoData.slice(0, 3);
-//   setVideos(limitedVideos);
-// }, []);
-
   useEffect(() => {
     setVideos(videoData);
+  }, []);
+
+  // Pridėkite šį useEffect, kad automatiškai slinktų į viršų, kai komponentas užkraunamas
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
