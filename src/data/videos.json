@@ -12,12 +12,15 @@
     ]
   },
   {
-    "src": "/nenix.webm",
-    "title": "Nenix",
-    "description": "Nenix example from Figma",
+    "src": "/google-clone.webm",
+    "title": "Google clone",
+    "description": "Clone of Google",
     "links": [
-      { "href": "https://dgenutis-nenix.netlify.app/", "text": "Link" },
-      { "href": "https://github.com/dgenutis/nenix", "text": "Git-Hub" }
+      { "href": "https://dgenutis.github.io/Google-clone/", "text": "Link" },
+      {
+        "href": "https://github.com/dgenutis/Google-clone?tab=readme-ov-file",
+        "text": "Git-Hub"
+      }
     ]
   },
   {
@@ -63,18 +66,34 @@
     ]
   },
   {
+    "src": "/nenix.webm",
+    "title": "Nenix",
+    "description": "Nenix example from Figma",
+    "links": [
+      { "href": "https://dgenutis-nenix.netlify.app/", "text": "Link" },
+      { "href": "https://github.com/dgenutis/nenix", "text": "Git-Hub" }
+    ]
+  },
+  {
     "src": "/portfolio1.webm",
-    "title": "Portfolio",
+    "title": "Portfolio template I",
     "description": "This is Portfolio template",
     "links": [
       {
         "href": "https://dgenutis.github.io/Porfolio_1-sablonas-/#",
-        "text": "Link"
-      },
+        "text": "Link"},
+      {"href": "https://github.com/dgenutis/Porfolio_1-sablonas-?tab=readme-ov-file", "text": "Git-Hub" }
+    ]
+  },
       {
-        "href": "https://github.com/dgenutis/Porfolio_1-sablonas-?tab=readme-ov-file",
-        "text": "Git-Hub"
+        "src": "/porcijuSkaiciuokle.webm",
+        "title": "Porcijų skaičiuoklė",
+        "description": "Receptų porcijų skaičiuoklė",
+        "links": [
+          { "href": "https://dgenutis.github.io/Receptu-porciju-skaiciuokle/", "text": "Link" },
+          { "href": "https://github.com/dgenutis/Receptu-porciju-skaiciuokle", "text": "Git-Hub" }
+        ]
       }
     ]
-  }
-]
+  
+
