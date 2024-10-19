@@ -11,10 +11,6 @@ const Projects = () => {
     setVideos(videoData);
   }, []);
 
-  // Pridėkite šį useEffect, kad automatiškai slinktų į viršų, kai komponentas užkraunamas
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
 
   return (
     <>
