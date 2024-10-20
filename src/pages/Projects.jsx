@@ -21,7 +21,7 @@ const Projects = () => {
               Dainius Genutis
             </Link>
             <div className="projects-nav">
-              <Link to="/">To Main</Link>
+              <Link to="/">Main</Link>
             </div>
           </div>
         </div>
