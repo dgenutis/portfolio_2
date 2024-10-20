@@ -1,5 +1,29 @@
 [
   {
+    "src": "/weatherApp2.webm",
+    "title": "Weather App II",
+    "description": "Weather App that uses a Weather API",
+    "links": [
+      { "href": "https://dgenutis-weather-app.netlify.app/", "text": "Link" },
+      {
+        "href": "https://github.com/dgenutis/weather-app2",
+        "text": "Git-Hub"
+      }
+    ]
+  },
+  {
+    "src": "/portfolio-template2.webm",
+    "title": "Portfolio template II",
+    "description": "This is Portfolio template",
+    "links": [
+      { "href": "https://dgenutis-template2.netlify.app/", "text": "Link" },
+      {
+        "href": "https://github.com/dgenutis/portfolio-template2/",
+        "text": "Git-Hub"
+      }
+    ]
+  },
+  {
     "src": "/moviesApp.webm",
     "title": "Movies App",
     "description": "Movies App that uses a movies API",
